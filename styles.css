@@ -1,0 +1,182 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* VARIABLES */
+:root {
+  /* primary colors */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* neutral colors (paragraphs) */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* neutral colors (background, headings, buttons) */
+  --Very-light-gray: hsl(0, 0%, 95%);
+
+  /* font-family */
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-accent: "Big Shoulders Display", sans-serif;
+
+  /* font-size */
+  --fs-400: 0.9375rem;
+  --fs-700: 2rem;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* FONTS */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+}
+
+h2 {
+  font-family: var(--ff-accent);
+  font-size: var(--fs-700);
+}
+
+/* BASE STYLES */
+body {
+  background-color: var(--Very-light-gray);
+}
+
+li {
+  list-style: none;
+}
+
+svg {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--Very-light-gray);
+  margin-bottom: 2rem;
+}
+
+p {
+  color: var(--Transparent-white);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 1em 2em;
+  display: inline-block;
+}
+
+.button {
+  background-color: var(--Very-light-gray);
+  display: inline-block;
+  border-radius: 2em;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button a:hover {
+  color: var(--Transparent-white);
+  border-style: solid;
+  border-radius: 2em;
+}
+
+li:nth-child(1) a {
+  color: var(--Bright-orange);
+}
+
+li:nth-child(2) a {
+  color: var(--Dark-cyan);
+}
+
+li:nth-child(3) a {
+  color: var(--Very-dark-cyan);
+}
+
+.card-orange {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.card-cyan {
+  background-color: var(--Dark-cyan);
+}
+
+.card-dark-cyan {
+  background-color: var(--Very-dark-cyan);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+/* MOBILE FIRST */
+/* mobile styles min-width 320px (Mobile: 375px) */
+.container {
+  max-width: 36ch;
+  margin: 6rem auto;
+}
+
+.card-box {
+  padding: 3rem;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+/* small tablets & laptops styles min-width: 620px  */
+@media screen and (min-width: 620px) {
+  .container {
+    max-width: 54ch;
+  }
+}
+
+/* large tablets & laptop styles min-width: 960px  */
+@media screen and (min-width: 960px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    max-width: 90ch;
+  }
+
+  .card-orange {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5em;
+  }
+
+  .card-dark-cyan {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+}
+
+/* desktop styles min-width: 1200px (Desktop: 1440px) */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 99ch;
+  }
+
+  p {
+    margin-bottom: 6rem;
+  }
+}
