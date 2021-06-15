@@ -42,6 +42,21 @@ In chronological order:
 
 I learned about the ch unit and decided to experiment with it in this challenge. This unit relates to the width of the "0" zero and calculates the width by the number of characters in a text. It is recommended to use between 60-75ch units to maintain readability of paragraphs.
 
+How to vertically center container in body:
+html, body {
+height: 100%;
+}
+
+html {
+display: table;
+margin: auto;
+}
+
+body {
+display: table-cell;
+vertical-align: middle;
+}
+
 ### Continued development
 
 - CSS Flexbox
