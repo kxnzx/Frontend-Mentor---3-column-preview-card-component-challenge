@@ -45,8 +45,15 @@ h2 {
 }
 
 /* BASE STYLES */
+html {
+  height: 100%;
+}
+
 body {
   background-color: var(--Very-light-gray);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -67,6 +74,10 @@ p {
   color: var(--Transparent-white);
   margin-bottom: 2rem;
   line-height: 1.6;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .button a {
@@ -146,6 +157,16 @@ li:nth-child(3) a {
 
 /* large tablets & laptop styles min-width: 960px  */
 @media screen and (min-width: 960px) {
+  html {
+    display: table;
+    margin: auto;
+  }
+
+  body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
