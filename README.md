@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./Screenshotcard.png)
+![Screenshot](images/Screenshotcard.png)
 
 ### Links
 
