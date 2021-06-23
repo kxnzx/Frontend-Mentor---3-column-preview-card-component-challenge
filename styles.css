@@ -136,7 +136,7 @@ li:nth-child(3) a {
 /* mobile styles min-width 320px (Mobile: 375px) */
 .container {
   max-width: 36ch;
-  margin: 6rem auto;
+  margin: 1rem auto;
 }
 
 .card-box {
@@ -145,6 +145,11 @@ li:nth-child(3) a {
 
 .attribution {
   text-align: center;
+  color: #006970;
+}
+
+.attribution .text {
+  color: #e38826;
 }
 
 /* MEDIA QUERIES */
@@ -157,7 +162,7 @@ li:nth-child(3) a {
 
 /* large tablets & laptop styles min-width: 960px  */
 @media screen and (min-width: 960px) {
-  html {
+  /*html {
     display: table;
     margin: auto;
   }
@@ -165,6 +170,11 @@ li:nth-child(3) a {
   body {
     display: table-cell;
     vertical-align: middle;
+  }*/
+
+  body,
+  html {
+    height: 100%;
   }
 
   ul {
@@ -173,6 +183,13 @@ li:nth-child(3) a {
   }
   .container {
     max-width: 90ch;
+    margin-top: 6rem;
+
+    /*vertically center align div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   .card-orange {

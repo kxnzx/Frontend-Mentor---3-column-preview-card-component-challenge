@@ -18,6 +18,15 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+### Screenshot
+
+![Screenshot](./Screenshotcard.png)
+
+### Links
+
+- [See Solution](https://www.frontendmentor.io/solutions/responsive-mobile-first-product-card-website-with-flexbox-rgbdkza9s)
+- [Live Site](https://kxnzx.github.io/responsive-product-card/)
+
 ## My process
 
 In chronological order:
@@ -40,9 +49,11 @@ In chronological order:
 
 ### What I learned
 
-I learned about the ch unit and decided to experiment with it in this challenge. This unit relates to the width of the "0" zero and calculates the width by the number of characters in a text. It is recommended to use between 60-75ch units to maintain readability of paragraphs.
+- I learned about the ch unit and decided to experiment with it in this challenge. This unit relates to the width of the "0" zero and calculates the width by the number of characters in a text. It is recommended to use between 60-75ch units to maintain readability of paragraphs.
 
-How to vertically center container in body:
+- How to vertically center container in body:
+
+```
 html, body {
 height: 100%;
 }
@@ -56,6 +67,22 @@ body {
 display: table-cell;
 vertical-align: middle;
 }
+```
+
+- The above method didn't work out well in this case, because the footer did not stay at the bottom anymore. I have used this method instead:
+
+```
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+```
 
 ### Continued development
 
@@ -67,5 +94,4 @@ vertical-align: middle;
 
 ## Author
 
-- Website - [kxnzx](https://github.com/kxnzx)
-- Frontend Mentor - [@kxnzx](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@kxnzx](https://www.frontendmentor.io/profile/kxnzx)
