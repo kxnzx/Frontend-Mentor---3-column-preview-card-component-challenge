@@ -28,8 +28,7 @@ Users should be able to:
 
 #### Screensize 375px - Mobile
 
-<img src="images/Screenshotcard1.png" width="150px" alt="mobile">
-<img src="images/Screenshotcard2.png" width="150px" alt="mobile">
+<img src="images/Screenshotcard1.png" width="150px" alt="mobile"><img src="images/Screenshotcard2.png" width="150px" alt="mobile">
 
 ### Links
 
