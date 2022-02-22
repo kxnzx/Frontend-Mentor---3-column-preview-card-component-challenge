@@ -5,6 +5,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ## Table of contents
 
 - [The challenge](#the-challenge)
+- [Screenshot](#screenshots)
+- [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -20,12 +22,19 @@ Users should be able to:
 
 ### Screenshot
 
+#### Screensize 1440px - Desktop
+
 ![Screenshot](images/Screenshotcard.png)
+
+#### Screensize 375px - Mobile
+
+<img src="images/screenshotcard1.png" width="100px" alt="mobile">
+<img src="images/screenshotcard2.png" width="100px" alt="mobile">
 
 ### Links
 
-- [See Solution](https://www.frontendmentor.io/solutions/responsive-mobile-first-product-card-website-with-flexbox-rgbdkza9s)
-- [Live Site](https://kxnzx.github.io/responsive-product-card/)
+- View my Solution on [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-mobile-first-product-card-website-with-flexbox-rgbdkza9s)
+- View the Live Site [here](https://kxnzx.github.io/responsive-product-card/)
 
 ## My process
 
@@ -53,26 +62,28 @@ In chronological order:
 
 - How to vertically center container in body:
 
-```
-html, body {
-height: 100%;
+```css
+html,
+body {
+  height: 100%;
 }
 
 html {
-display: table;
-margin: auto;
+  display: table;
+  margin: auto;
 }
 
 body {
-display: table-cell;
-vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 ```
 
 - The above method didn't work out well in this case, because the footer did not stay at the bottom anymore. I have used this method instead:
 
-```
-html, body {
+```css
+html,
+body {
   height: 100%;
 }
 
